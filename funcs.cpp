@@ -40,3 +40,29 @@ v.y = v.y + (X.y*dt);
 v.z = v.z + (X.z*dt);
 *ppos = v;
 }
+
+//task E:
+
+
+Coord3D* createCoord3D(double x, double y, double z)
+{
+cout<<"\ndynamically allocated memory for structure"<<endl;
+Coord3D* ppos = new Coord3D;
+ppos->x = x;
+ppos->y = y;
+ppos->z = z;
+return ppos;
+}
+
+void deleteCoord3D(Coord3D *p)
+{
+cout<<"Deleting the structure"<<endl;
+delete p;
+}
+
+void move(Coord3D pp, Coord3D pv, double t)
+{
+pp->x = (pv->x*t)+pp->x;
+pp->y = (pv->y*t)+pp->y;
+pp->z = (pv->z*t)+pp->z;
+}
