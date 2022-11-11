@@ -2,7 +2,7 @@
 Author: Frida Mesa
 Course: CSCI-135
 Instructor: Mike Zamansky
-Assignment: Lab 7 B
+Assignment: Lab 9 A-B-C
 Here, I wrote a program in which you define a function length() that receives the coordinates of a point P passed as a pointer, 
 and computes the distance from the origin to the point P
 */
