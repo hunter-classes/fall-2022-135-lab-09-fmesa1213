@@ -26,10 +26,17 @@ return len;
 }
 
 
-int main() 
+//task B:
+
+Coord3D * fartherFromOrigin(Coord3D *p1, Coord3D *p2){
+
+if( ((p1->x * p1->x) + (p1->y * p1->y) + (p1->z * p1->z)) > ((p2->x * p2->x) + (p2->y * p2->y) + (p2->z * p2->z)))
 {
-Coord3D pointP = {10, 20, 30};
-cout << length(&pointP) << endl; 
+return p1;
+} 
+else 
+{
+return p2;
+}
   return 0;
 }
-
