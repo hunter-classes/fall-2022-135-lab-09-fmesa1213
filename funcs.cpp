@@ -19,4 +19,24 @@ return p2;
   return 0;
 }
 
+//task C:
 
+struct Coord3D
+
+{
+double x;
+double y;
+double z;
+};
+
+void move(Coord3D *ppos, Coord3D *pvel, double dt)
+
+{
+Coord3D &v = *ppos;
+Coord3D &X = *pvel;
+
+v.x = v.x + (X.x*dt);
+v.y = v.y + (X.y*dt);
+v.z = v.z + (X.z*dt);
+*ppos = v;
+}
