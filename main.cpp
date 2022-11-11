@@ -2,7 +2,6 @@
 #include <math.h>
 #include "funcs.h"
 #include "3d-space.cpp"
-#include <math.h>
 using namespace std;
 
 
