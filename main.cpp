@@ -1,7 +1,12 @@
 #include <iostream>
 #include <math.h>
 #include "funcs.h"
+#include "3d-space.cpp"
+#include <math.h>
+using namespace std;
 
+
+//task a
 int main()
 {
   Coord3D pointP = {10, 20, 30};
@@ -9,7 +14,10 @@ cout << length(&pointP) << endl;
   return 0;
 }
 
-int main() {
+
+//task b
+int main() 
+{
     Coord3D pointP = {10, 20, 30};
     Coord3D pointQ = {-20, 21, -22};
 
@@ -22,3 +30,14 @@ int main() {
   return 0;
 }
 
+//task c
+
+int main()
+{
+Coord3D pos = { 0, 0, 100.0 };
+Coord3D vel = { 1, -5, 0.2 };
+move(&pos, &vel, 2.0);
+cout << pos.x << " " << pos.y << " " << pos.z << endl;
+
+return 0;
+}
